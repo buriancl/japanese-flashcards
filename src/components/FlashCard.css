@@ -1,0 +1,79 @@
+.flashcard {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flashcard__card {
+  width: 300px;
+  height: 400px;
+  margin: 10px auto;
+  border-radius: 2px;
+  display: flex;
+}
+.flashcard__cardFront {
+  padding: 125px 0 0;
+  margin: 0 auto;
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+  font-size: 4em;
+  background-color: #f9f9f9;
+}
+
+.flashcard__cardBack {
+  padding: 125px 0 0 0;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 4em;
+  background-color: #f9f9f9;
+}
+
+.drawCardBtn {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  border-style: none;
+  box-shadow: -5px 4px 16px -3px rgba(0, 0, 0, 0.46);
+  padding: 5px;
+  background-color: #fff;
+  padding: 2px 24px;
+  margin: 20px auto 35px;
+}
+
+.drawCardBtn:hover {
+  background-color: #f6f9fe;
+  color: #174ea6;
+  border: 1px solid #174ea6;
+}
+
+.drawCardBtn:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
+    0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.drawCardBtn:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+@media (max-width: 450px) {
+  .flashcard {
+    top: 65%;
+  }
+  .flashcard__card {
+    width: 250px;
+    height: 375px;
+  }
+
+  .flashcard__cardBack,
+  .flashcard__cardFront {
+    font-size: 3em;
+  }
+}

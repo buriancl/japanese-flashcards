@@ -1,0 +1,21 @@
+.landing {
+  width: 80vw;
+  margin: 25px auto;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.landing__title {
+  font-size: 3em;
+}
+
+.landing__text {
+  margin: 25px auto;
+  font-size: 1.25em;
+}
+
+@media (max-width: 450px) {
+  .landing__title {
+    font-size: 2.5em;
+  }
+}
